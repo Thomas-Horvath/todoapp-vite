@@ -5,5 +5,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+   h1 {
+    color: $orange;
+    font-size: 3rem;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+   }
 }
