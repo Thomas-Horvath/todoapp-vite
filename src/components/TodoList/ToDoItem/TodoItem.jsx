@@ -10,7 +10,7 @@ export default function TodoItem(props) {
 
     return (
         <li>
-            {itemName}<button onClick={handleDelete}><RiDeleteBin6Line /></button>
+           {itemName}<button onClick={handleDelete}><RiDeleteBin6Line /></button>
         </li>
     )
 }

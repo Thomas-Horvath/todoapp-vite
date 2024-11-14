@@ -11,7 +11,7 @@ export default function TodoList(props) {
         />);
 
     return (
-        <ul className={s.todo_list}>
+        <ul className={props.itemList.length > 0  ? s.todo_list : s.dnone }>
             {renderList(props.itemList)}
         </ul>
     )

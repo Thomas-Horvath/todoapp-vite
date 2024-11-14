@@ -1,0 +1,55 @@
+@use "sass:color";
+
+.todo_list {
+    width: 100%;
+    background: #333;
+    border: 2px solid $white-smoke;
+    border-radius: 5px;
+
+
+    li {
+        padding: 1rem 3rem;
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        &:hover {
+            background: #55555544;
+        }
+
+        &:not(:last-child) {  //* ez határozza meg, hogy az utolsó elemen kívül a több megkapja
+            border-bottom: 1px solid #77777750;
+        }
+    }
+
+    button {
+        padding: .3rem;
+        background: tomato;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        svg {
+            font-size: 1.6rem;
+            color: $bg;
+        }
+
+        &:hover {
+            background: color.scale(tomato, $lightness: -15%);
+        }
+    }
+}
+
+.dnone {
+    display: none;
+}
+
+@media screen and (max-width: 592px) {
+    .todo_list {
+        li {
+            padding: 1rem;
+        }
+    }
+}
